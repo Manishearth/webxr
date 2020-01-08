@@ -2065,8 +2065,8 @@ interface XRInputSourcesChangeEvent : Event {
 
 dictionary XRInputSourcesChangeEventInit : EventInit {
   required XRSession session;
-  required FrozenArray&lt;XRInputSource&gt; added;
-  required FrozenArray&lt;XRInputSource&gt; removed;
+  required sequence&lt;XRInputSource&gt; added;
+  required sequence&lt;XRInputSource&gt; removed;
 
 };
 </pre>
